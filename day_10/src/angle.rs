@@ -20,14 +20,18 @@ pub fn calculate_angle(origin: &Point, dst: &Point) -> Fraction {
     }
 }
 
-pub fn normalize_angles_to_lcm(input: &mut Vec<Fraction>) {
+pub fn calc_lcm(input: &Vec<Fraction>) -> i128 {
     let mut lcm = 1;
     for i in 0..input.len() {
         if input[i].den != 0 {
             lcm = lcm.lcm(&input[i].den);
         }
     }
+    return lcm;
+}
 
+pub fn normalize_angles_to_lcm(input: &mut Vec<Fraction>) {
+    let lcm = calc_lcm(&input);
     for i in 0..input.len() {
         if input[i].den != 0 {
             let multiple = (lcm / input[i].den).abs();

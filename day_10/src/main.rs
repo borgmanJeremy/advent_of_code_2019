@@ -32,18 +32,8 @@ pub fn parse_map_to_vector(path: &str) -> Vec<Point> {
     return point_vec;
 }
 
-fn main() {
+fn part_1() {
     let map = parse_map_to_vector("/home/jeremy/advent_of_code/day_10/input.txt");
-
-    //let mut raw_angle = Vec::new();
-    //let origin = Point { x: 5, y: 8 };
-    //for destination in &map {
-    //    let angle = calculate_angle(&origin, destination);
-    //    raw_angle.push(angle);
-    //}
-    //normalize_angles_to_lcm(&mut raw_angle);
-    //let set: HashSet<Fraction> = raw_angle.into_iter().collect();
-    //println!("Pos: {:?} Num seen: {}", origin, set.len() - 1);
 
     let mut max = 0;
     let mut max_point = Point { x: 0, y: 0 };
@@ -61,8 +51,26 @@ fn main() {
             max_point.x = origin.x;
             max_point.y = origin.y;
         }
-        //println!("Pos: {:?} Num seen: {}", );
     }
-
     println!("Pos: {:?} Num seen: {}", max_point, max);
+}
+
+fn main() {
+    part_1();
+
+    let map = parse_map_to_vector("/home/jeremy/advent_of_code/day_10/input.txt");
+
+    let origin = Point { x: 29, y: 28 };
+    let mut raw_angle = Vec::new();
+    for destination in &map {
+        let angle = calculate_angle(&origin, destination);
+        raw_angle.push(angle);
+    }
+    normalize_angles_to_lcm(&mut raw_angle);
+    let lcm = calc_lcm(&raw_angle);
+
+    let mut dx = Vec::new();
+    for idx in 0..=lcm {
+        dx.push(idx);
+    }
 }
