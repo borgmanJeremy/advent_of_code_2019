@@ -1,0 +1,29 @@
+program ended
+min x: 0 max x: 44
+min y: 0 max y: 25
+|||||||||||||||||||||||||||||||||||||||||||||
+|                                           |
+|  UU   UUU    U  UUU U  U U U UU  UU     U |
+| UU   U UU U UU  U   U    U       U  UUUU  |
+| U UU  UUUU U U  U   U UU U  UUU U   U   U |
+| U   U  U U    U UU U U U U    U  U  U     |
+| U U   U UU   U  U    UUU  U UU UU U    U  |
+| U U  U     U U U   U  U  U    U U   UU U  |
+| U   U UU    U  U  U   U U U U    UUU    U |
+| U U UU UUUUU   U  U       UUU UU     U UU |
+|   UU UUUU  UU U  UU  U U U  U          U  |
+| U U U UUU  UUUU  UUU   U  UUUUU U UU UUUU |
+| U   U      U U         UUU   UU U   U  U  |
+| U U U U U UUUU    UU U  U  U    UUUU UU U |
+|   UU    UUU   UU U  UUUU U    U    U UUU  |
+| UU U      UU  U  UU U    UU U UU      U   |
+| U UU  U  U UUUUU U  UU U UU    U UU U     |
+|    UU UUU    U UUU U  UU U   U   UU       |
+|       U  U   U U   U UU  U U UU U  U  UU  |
+|  U  U  U  UU     UU UU     U  UU   U  U   |
+|                                           |
+|                   o                       |
+|                                           |
+|                                           |
+|                     _                     |
+|                                           |
