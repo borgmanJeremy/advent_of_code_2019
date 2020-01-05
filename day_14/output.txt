@@ -1,0 +1,27 @@
+Node: Fuel 1
+	Edge: A 7
+	Edge: E 1
+Node: A 1
+	Edge: Ore 10
+Node: E 1
+	Edge: A 7
+	Edge: D 1
+Node: Ore 1
+Node: A 1
+	Edge: Ore 10
+Node: D 1
+	Edge: A 7
+	Edge: C 1
+Node: Ore 1
+Node: A 1
+	Edge: Ore 10
+Node: C 1
+	Edge: A 7
+	Edge: B 1
+Node: Ore 1
+Node: A 1
+	Edge: Ore 10
+Node: B 1
+	Edge: Ore 1
+Node: Ore 1
+Node: Ore 1

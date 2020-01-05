@@ -197,7 +197,7 @@ fn main() {
     // Part 2
     let width = 45;
     let height = 26;
-    let scale = 10;
+    let scale = 9;
     let sdl_context = sdl2::init().unwrap();
     let video_subsystem = sdl_context.video().unwrap();
     let window = video_subsystem
@@ -230,7 +230,6 @@ fn main() {
             }
 
             cpu.output_stack.clear();
-            draw_sprites(&mut canvas, &sprite_vec, scale);
         }
         match cpu.state {
             CpuState::PendingInput => {
@@ -245,6 +244,7 @@ fn main() {
                     cpu.input_stack.push(0)
                 }
 
+                draw_sprites(&mut canvas, &sprite_vec, scale);
                 ::std::thread::sleep(Duration::new(0, 1_000_000_000u32 / 60));
             }
             CpuState::Halt => {
